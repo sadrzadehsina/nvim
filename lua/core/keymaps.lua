@@ -12,6 +12,7 @@ vim.opt.smartindent = true
 
 vim.keymap.set('n', '<leader><CR>', ':so ~/.config/nvim/init.lua<CR>')
 vim.keymap.set('n', '<leader>b', ':Vex<CR>')
+vim.keymap.set('n', '<leader>h', ':nohls<CR>')
 vim.keymap.set('n', '<C-p>', ':CtrlP<CR>')
 vim.keymap.set('n', '<C-n>', ':cnext<CR>')
 vim.keymap.set('n', '<C-e>', ':cprev<CR>')
