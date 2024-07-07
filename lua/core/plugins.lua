@@ -26,7 +26,6 @@ return require('packer').startup(function(use)
     requires = {
       {'williamboman/mason.nvim'},
       {'williamboman/mason-lspconfig.nvim'},
-
       {'neovim/nvim-lspconfig'},
       {'L3MON4D3/LuaSnip'},
       {'hrsh7th/nvim-cmp'},
@@ -41,6 +40,9 @@ return require('packer').startup(function(use)
     'neovim/nvim-lspconfig',
   }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+
+  use { 'prettier/vim-prettier', run = 'yarn install --frozen-lockfile --production' }
+
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.6',
     requires = { {'nvim-lua/plenary.nvim'} }
