@@ -12,14 +12,24 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
+
   use 'wbthomason/packer.nvim'
+
+  use 'preservim/nerdtree'
+
+  use 'ryanoasis/vim-devicons'
+
+  use 'tiagofumo/vim-nerdtree-syntax-highlight'
+
   use { "ellisonleao/gruvbox.nvim" }
+
   use "rebelot/kanagawa.nvim"
-  use 'nvim-tree/nvim-web-devicons'
+
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v3.x',
@@ -34,11 +44,13 @@ return require('packer').startup(function(use)
       {'hrsh7th/cmp-path'},
     }
   }
+
   use {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
     'neovim/nvim-lspconfig',
   }
+
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   use { 'prettier/vim-prettier', run = 'yarn install --frozen-lockfile --production' }
@@ -47,6 +59,7 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.6',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function()
@@ -54,11 +67,6 @@ return require('packer').startup(function(use)
       ts_update()
     end,
   }
-  use {'stevearc/dressing.nvim'}
-
-  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-    require("toggleterm").setup()
-  end}
 
   use "folke/trouble.nvim"
 
