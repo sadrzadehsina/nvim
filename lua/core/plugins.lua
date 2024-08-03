@@ -15,19 +15,16 @@ return require('packer').startup(function(use)
 
   use 'wbthomason/packer.nvim'
 
-  use 'preservim/nerdtree'
-
   use 'ryanoasis/vim-devicons'
 
-  use 'tiagofumo/vim-nerdtree-syntax-highlight'
+  use 'preservim/nerdtree'
 
-  use { "ellisonleao/gruvbox.nvim" }
+  use 'tiagofumo/vim-nerdtree-syntax-highlight'
 
   use "rebelot/kanagawa.nvim"
 
   use {
     'nvim-lualine/lualine.nvim',
-    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
   use {

@@ -1,3 +1,4 @@
+require("core.plugin_config.nerdtree")
 require("core.plugin_config.colorschema")
 require("core.plugin_config.lualine")
 require("core.plugin_config.lsp-config")

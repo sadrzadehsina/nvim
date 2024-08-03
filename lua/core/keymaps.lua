@@ -1,17 +1,3 @@
-
-vim.g.mapleader = ' '
-
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.softtabstop = 2
-vim.opt.scrolloff = 8
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.expandtab = true
-vim.opt.smartindent = true
-
-vim.keymap.set('n', '<leader>b', ':NERDTreeToggle<CR>')
-
 vim.keymap.set('n', '<leader><CR>', ':so ~/.config/nvim/init.lua<CR>')
 vim.keymap.set('n', '<leader>h', ':nohls<CR>')
 vim.keymap.set('n', '<leader>Y', 'gg"+yG')
